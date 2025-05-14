@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteSteps | Premium Footwear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Elite<span>Steps</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" id="search-btn"><i class="fas fa-search"></i></a>
+                <a href="#" id="user-btn"><i class="fas fa-user"></i></a>
+                <a href="#" id="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+            
+            <!-- Search Form -->
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shopping Cart -->
+    <div class="shopping-cart">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added dynamically -->
+        </div>
+        <div class="cart-total">
+            <h4>Total: $<span id="cart-total">0.00</span></h4>
+            <a href="#" class="btn checkout-btn">Checkout</a>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-form">
+        <form action="">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Your Email" class="box">
+            <input type="password" placeholder="Your Password" class="box">
+            <p>Forgot your password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Create one</a></p>
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Step Into <span>Elegance</span></h1>
+                <p>Discover our premium collection of footwear crafted for comfort and style</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Premium Shoes">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-box">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Free Shipping</h3>
+                <p>On all orders over $100</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-undo"></i>
+                <h3>30-Day Returns</h3>
+                <p>No questions asked</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Payment</h3>
+                <p>100% secure checkout</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our <span>Products</span></h2>
+            <div class="product-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="men">Men</button>
+                <button class="filter-btn" data-filter="women">Women</button>
+                <button class="filter-btn" data-filter="sneakers">Sneakers</button>
+                <button class="filter-btn" data-filter="formal">Formal</button>
+            </div>
+            <div class="product-grid">
+                <!-- Products will be loaded dynamically from JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="About EliteSteps">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Our <span>Story</span></h2>
+                <p>Founded in 2010, EliteSteps has been dedicated to crafting premium footwear that combines style, comfort, and durability. Our journey began with a simple mission: to create shoes that people love to wear every day.</p>
+                <p>Each pair is meticulously designed by our team of expert craftsmen using only the finest materials. We believe that great shoes shouldn't just look good—they should feel amazing from the first step to the last.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Customer <span>Testimonials</span></h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <p>"The most comfortable shoes I've ever worn! I bought three pairs and can't decide which I love more."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah J.">
+                        <h4>Sarah J.</h4>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"Excellent craftsmanship and attention to detail. Worth every penny and more!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T.">
+                        <h4>Michael T.</h4>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"I get compliments every time I wear my EliteSteps. The customer service is outstanding too!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emily R.">
+                        <h4>Emily R.</h4>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <span class="slider-dot active"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest updates, exclusive offers, and style tips delivered to your inbox.</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Us</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Address</h4>
+                        <p>123 Fashion Avenue, Style District, NY 10001</p>
+                    </div>
+                    <div class="contact-box">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <div class="contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>info@elitesteps.com</p>
+                    </div>
+                    <div class="contact-box">
+                        <i class="fas fa-clock"></i>
+                        <h4>Hours</h4>
+                        <p>Mon-Fri: 9AM - 6PM<br>Sat: 10AM - 4PM</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-col">
+                <h3>EliteSteps</h3>
+                <p>Premium footwear for every step of your journey. Quality, comfort, and style in every pair.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Payment Methods</h3>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2023 EliteSteps. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
